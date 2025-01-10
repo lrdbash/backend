@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ES Modules
+    "target": "ESNext", // Target modern ECMAScript
+    "jsx": "react-jsx", // For React 17+ with automatic runtime
+    "declaration": true, // Generate declaration files
+    "removeComments": true, // Remove comments in emitted files
+    "emitDecoratorMetadata": true, // Required for NestJS
+    "experimentalDecorators": true, // Enable decorators
+    "allowSyntheticDefaultImports": true, // Support synthetic imports
+    "sourceMap": true, // Generate source maps
+    "outDir": "./dist", // Output directory for compiled files
+    "baseUrl": "./", // Base directory for module resolution
+    "incremental": true, // Enable incremental compilation
+    "strict": true, // Enable all strict type-checking options
+    "strictNullChecks": true, // Enable strict null checks
+    "noImplicitAny": true, // Disallow `any` type
+    "strictBindCallApply": true, // Ensure strict method binding
+    "forceConsistentCasingInFileNames": true, // File name case sensitivity
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough in switch statements
+    "allowJs": true, // Allow JavaScript files
+    "moduleResolution": "Node", // Node.js-style module resolution
+    "esModuleInterop": true, // Support ES module interop
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true // Enable importing JSON files
+  },
+  "include": [
+    "src/**/*.ts", // Include all files in the src directory
+    "src/tsconfig-paths.d.ts" // Include the custom type declaration file
+  ],
+  "exclude": [
+    "node_modules", // Exclude dependencies
+    "dist", // Exclude build output directory
+    "**/*.spec.ts", // Exclude test files (optional)
+    "**/*.test.ts" // Exclude test files (optional)
+  ]
+}
